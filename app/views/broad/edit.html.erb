@@ -1,0 +1,19 @@
+<h1>edit page</h1>
+<div class="container">
+    <form action='/broad/update/<%= @post.id%>' method='POST'>
+      <div class="form-group">
+        <label for="formGroupExampleInput">이름: </label>
+        <input type="text" class="form-control" name="username" id="formGroupExampleInput" placeholder="Example input" value="<%= @post.editor%>">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Subject</label>
+        <input type="text" class="form-control" name="subject" id="formGroupExampleInput" placeholder="Example input" value="<%= @post.title%>">
+      </div>
+      <div class="form-group">
+        <label for="exam pleFormControlTextarea1"> 내용: </label>
+        <textarea class="form-control" name="body" id="exampleFormControlTextarea1" rows="3" ><%= @post.content%></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<a href ="https://crud-post-jwj816.c9users.io/" class="btn btn-success" role="button"> 목록 </a>

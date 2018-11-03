@@ -1,0 +1,10 @@
+
+<h1>show page</h1>
+<a href ="https://crud-post-jwj816.c9users.io/" class="btn btn-success" role="button"> 목록 </a>
+<div class = "container">
+    게시자 : <%= @post.editor%><br><hr>
+    제목 : <%= @post.title%><br><hr>
+    내용 : <%= @post.content%><br><hr>
+</div>
+<a href="/broad/delete/<%= @post.id%>"> [삭제] </a><br>
+<a href="/broad/edit/<%= @post.id%>"> [수정] </a>

@@ -1,0 +1,14 @@
+<h1> index page </h1>
+<a href ="/broad/new" class="btn btn-success" role="button"> 글쓰기 </a>
+
+<div style="text-align:center">
+    <% @post_all.each do |p|%>
+        <hr>
+        <a href="/broad/show/<%= p.id %>" class="btn btn-info">
+            <%= p.title%> 
+        </a>
+        <br>
+        <hr>
+        editor : <%= p.editor%><br>
+    <% end%>
+</div>
