@@ -22,7 +22,8 @@ class BroadController < ApplicationController
   
     def show #show.html.erb 뷰파일을 위한 액션
         post_id = params[:id]
-        @post = Post.find(post_id)
+        @post = Post.find(post_id)  
+        
     end
   
     def new  #new.html.erb 뷰파일을 위한 액션

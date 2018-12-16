@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   # get 'mailbox/destroy/:id' => 'mailbox#destroy'
   
   root 'broad#index'
+  post '/posts/:post_id' => "comment#create"
+  
+  get '/comment/destroy/:reply_id' =>"comment#destroy"
   
   get 'broad/new' => 'broad#new'
   post 'create'=> 'broad#create'
